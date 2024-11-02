@@ -5,7 +5,7 @@ android_app {
     static_libs: [
         "androidx.appcompat_appcompat",
         "androidx.preference_preference",
-        "SettingsLib",
+        "SettingsLibCollapsingToolbarBaseActivity",
     ],
     platform_apis: true,
     privileged: true,

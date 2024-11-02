@@ -66,12 +66,7 @@ public class Settings extends CollapsingToolbarBaseActivity {
             throw new SecurityException("system user only");
         }
 
-        if (savedInstanceState == null) {
-            getSupportFragmentManager()
-                    .beginTransaction()
-                    .replace(com.android.settingslib.R.id.content_frame, new SettingsFragment())
-                    .commit();
-        }
+        setContentView(R.layout.settings_activity);
     }
 
     @Override
